@@ -1,0 +1,15 @@
+{
+  "name": "dropdown",
+  "version": "1.0.0",
+  "description": "First practice for vanilla JS components",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Anthony",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.9.3"
+  }
+}

@@ -1,0 +1,18 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    // Define what 1rem is.
+    /* Results in a default computed value of 10px since 0.625 * 16px = 10px */
+    /* So we're computing relative to user agent specified value, not overriding with a hardcoded value */
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+}
