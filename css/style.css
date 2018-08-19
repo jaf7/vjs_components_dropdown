@@ -1,0 +1,38 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  /* Results in a default computed value of 10px since 0.625 * 16px = 10px */
+  /* So we're computing relative to user agent specified value, not overriding with a hardcoded value */
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+.menu {
+  background: #E0E0E0;
+  border-top: 1px solid #9f9e9e;
+  font-size: 0; }
+  .menu__item {
+    padding: 0.6rem 2rem;
+    display: inline-block;
+    border-bottom: 1px solid #9f9e9e;
+    border-right: 1px solid #9f9e9e; }
+    .menu__item:hover {
+      background: #FFFFFF;
+      border-bottom: 1px solid #FFFFFF;
+      border-right: 1px solid #9f9e9e; }
+    .menu__item--link {
+      text-decoration: none;
+      color: #555;
+      font-family: Roboto;
+      font-size: 1.4rem;
+      font-weight: 800; }
+    .menu__item--current .menu__item--link {
+      color: #333333;
+      border-bottom: 2px solid #333;
+      padding-bottom: 0.5rem; }
